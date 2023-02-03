@@ -16,6 +16,7 @@ export const Colors = ({ colors, current }: IColors) => {
                 ? styles.colorsItemContainer
                 : styles.colorsItemContainerCurrent
             }
+            key={index}
           >
             <div
               key={index}

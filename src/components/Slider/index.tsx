@@ -6,13 +6,11 @@ import { Colors } from "./Colors";
 import styles from "./Slider.module.scss";
 
 const colors = ["red", "green", "blue", "yellow", "purple"];
+// const colors = ["red", "green",];
+// const colors = ["red"];
 
 export const Slider = () => {
   const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    console.log(current);
-  }, [current]);
 
   const onPrev = () => {
     if (!current) {
